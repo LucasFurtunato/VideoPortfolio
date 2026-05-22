@@ -1,0 +1,153 @@
+<!doctype html>
+<html class="h-100" lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="description" content="A growing collection of ready to use components for the CSS framework Bootstrap 5">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="96x96" href=".t/img/favicon.png">
+    <meta name="author" content="Holger Koenemann">
+    <meta name="generator" content="Eleventy v2.0.0">
+    <meta name="HandheldFriendly" content="true">
+    <title>Lucas Furtunato Portifolio</title>
+    <link rel="stylesheet" href="css/theme.min.css">
+
+    <style>
+      /* inter-300 - latin */
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 300;
+        font-display: swap;
+        src: local(''),
+            url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: local(''),
+            url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+      @font-face {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local(''),
+            url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+            url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      }
+    </style>
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+        <div class="container">
+            <a class="navbar-brand pe-4 fs-4" href="/">
+                <span class="ms-1 fw-bolder">Lucas Furtunato</span>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobremim" aria-label="Brings you to the frontpage">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portifolio">Portifólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+      <!-- Sobre Mim -->
+      <div class="w-100 overflow-hidden bg-gray-100" id="top">
+        <div class="container position-relative">
+            <div class="row">
+              <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right" id="sobremim">
+                <h1 class="display-1 fw-bold mt-5">Olá, Sou Lucas Furtunato</h1>
+                <p class="lead">Editor de vídeo e motion designer. Meu trabalho consiste em transformar conceitos e narrativas em peças audiovisuais com ritmo, fluidez e identidade visual.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Portifolio -->
+      <div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="portifolio">
+        <div class="container">
+            
+          <div class="row d-flex justify-content-between align-items-center">
+            <div class="col-lg-6">
+              <div class="row gx-5 d-flex">
+                <div class="col-md-11">
+                    <div class="shadow ratio rounded overflow-hidden align-self-end" data-aos="fade-right" style="--bs-aspect-ratio: 56%;">
+                        <video class="shadow rounded w-100" data-aos="fade-right" autoplay muted loop playsinline>
+                            <source src="videos/intro_video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <h3 class="py-5 border-top border-dark" data-aos="fade-left">Este vídeo de apresentação utiliza o universo e o espaço como fio condutor de uma curta narrativa visual. As imagens organizam o ritmo da edição e as transições do motion design, dando coesão à sequência.</h3>
+              <p><a href="intro_video.html" class="link-fancy link-dark" data-aos="fade-left" data-aos-delay="100">Veja Mais Detalhes</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contato -->
+      <div class="mt-5 py-4" id="contato">
+          <p class="text-center"><span class="fw-bold">lucasfurtunato.contato@gmail.com</span></p>
+      </div>
+    </main>
+
+    <div class="container text-center py-3 small">
+      Made by Lucas Furtunato with <a href="https://templatedeck.com" class="link-fancy" target="_blank">templatedeck.com</a>
+    </div>
+
+    <script src="js/bootstrap/bootstrap.bundle.js"></script>
+
+    <script src="js/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800, // values from 0 to 3000, with step 50ms
+      });
+    </script>
+
+    <script>
+      let scrollpos = window.scrollY
+      const header = document.querySelector(".navbar")
+      const header_height = header.offsetHeight
+
+      const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+      const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
+
+      window.addEventListener('scroll', function() {
+        scrollpos = window.scrollY;
+
+        if (scrollpos >= header_height) { add_class_on_scroll() }
+        else { remove_class_on_scroll() }
+
+        console.log(scrollpos)
+      })
+    </script>
+
+  </body>
+</html>
